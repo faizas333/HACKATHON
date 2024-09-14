@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="resume-container">
+        <h1 contenteditable="true" id="name">Faiza Amir</h1>
+        <h2 contenteditable="true" id="title">Full Stack Developer</h2>
+
+        <section>
+            <h3>Contact Information</h3>
+            <p><strong>Email:</strong> <span contenteditable="true" id="email">Abc.123@example.com</span></p>
+            <p><strong>Phone:</strong> <span contenteditable="true" id="phone">+123 456 7890</span></p>
+            <p><strong>LinkedIn:</strong> <span contenteditable="true" id="linkedin">linkedin.com/in/faiza</span></p>
+        </section>
+
+        <section>
+            <h3>Experience</h3>
+            <div contenteditable="true" id="experience">
+                <h4>Stack Developer - XYZ Company</h4>
+                <p>Worked on developing web applications using JavaScript, React, and Node.js.</p>
+            </div>
+        </section>
+
+        <section>
+            <h3>Skills</h3>
+            <ul contenteditable="true" id="skills">
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>HTML/CSS</li>
+                <li>React.js</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Education</h3>
+            <div contenteditable="true" id="education">
+                <h4>Bachelor's in Computer Science - ABC University</h4>
+                <p>Graduated with honors in 2015.</p>
+            </div>
+        </section>
+
+        <button id="saveButton">Save Changes</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
